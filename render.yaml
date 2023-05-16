@@ -1,7 +1,7 @@
 services:
   # A Docker web service
   - type: web
-    name: XList+Xria2
+    name: suanjinxiatiangithub
     env: docker
     repo: https://github.com/sayxiaoyan/Rendernotsay.git # optional
     region: Singapore # optional (defaults to oregon)
@@ -28,4 +28,7 @@ services:
         sync: false
       - key: DB_TABLE_PREFIX
         # value: alist_
+        sync: false
+      - key: DB_SSL_MODE
+        # value: false
         sync: false
